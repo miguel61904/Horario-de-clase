@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+aside{
+    margin-top: 20px;
+    float: left;
+    display: flex;
+    max-width: 200px;
+}
+
+ul button{
+    margin-top: 10px;
+    text-decoration: none;
+    list-style: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contList{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/*estilos tabla*/
+
+table {
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        td button{
+            padding: 8px 12px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            background-color: #4CAF50;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        td button:hover {
+            background-color: #45a049;
+        }
+
+        td button:active {
+            background-color: #3e8e41;
+        }

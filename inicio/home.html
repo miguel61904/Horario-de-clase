@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="contIMG">
+            <H1>I.E Imaginaria</H1> 
+        </div>
+        <div class="contList">
+            <a href=""><li>Inicio/</li></a>
+            <a href=""><li>Registro</li></a>   
+        </div>
+    </nav>
+    <aside>
+        <ul>
+            <button id="consultaH">Consulta Horario</button>
+            <button id="gestionG">Gestion de Grupos</button>
+            <button id="gestionP">Gestion de Profesores</button>
+            <button id="gestionE">Gestion de Estudiantes</button>
+            <button id="modificarH">Modificar Horario</button>
+        </ul>
+    </aside>
+
+    <section id="consultaHorario" style="display: none;">
+        <select name="" id="">
+            <option value="">Profesor 1</option>
+            <option value="">Profesor 2</option>
+            <option value="">Profesor 3</option>
+        </select>
+        <select name="" id="">
+            <option value="">Grado1</option>
+            <option value="">Grado2</option>
+            <option value="">Grado3</option>
+        </select>
+        <button type="submit">Enviar</button>
+    </section>
+
+    <section id="gestionGrupos" style="display: none;">
+        <button id="agregarH">Agregar nuevo grupo</button>
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Grado</th>
+                    <th>Grupo</th>
+                    <th>Jornada</th>
+                    <th>Nro de Estudiantes</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTabla">
+                <tr>
+                    <td>1</td>
+                    <td>5°</td>
+                    <td>A</td>
+                    <td>Mañana</td>
+                    <td>30</td>
+                    <td><button>Editar</button> <button>Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>6°</td>
+                    <td>B</td>
+                    <td>Tarde</td>
+                    <td>28</td>
+                    <td><button class="editar">Editar</button> <button class="eliminar">Eliminar</button></td>
+                </tr>
+                <!-- Puedes agregar más filas aquí -->
+            </tbody>
+            <button class="Confirm">Confirmar</button>
+        </table>
+        <dialog class="formAgregarH">
+                <div>
+                    <label for="">ID</label>
+                    <input type="text" id="id">
+                </div>
+                <div>
+                    <label for="">Grado</label>
+                    <input type="text" id="grado">
+                </div>
+                <div>
+                    <label for="">Grupo</label>
+                    <input type="text" id="grupo">
+                </div>
+                <div>
+                    <label for="">Jornada</label>
+                    <input type="text" id="jornada">
+                </div>
+                <div>
+                    <label for="">Nro de Estudiante</label>
+                    <input type="text" id="nestudiante">
+                </div>
+                <button id="cerrarvtn">Cerrar</button>
+        </dialog>
+    </section>
+
+    <section id="gestionProfes" style="display: none;">
+        <button id="agregarProfe">Agregar Profesor</button>
+        <table id="tablaProfe">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Asignatura</th>
+                    <th>Horario</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTabla">
+            </tbody>
+            <button class="Confirm">Confirmar</button>
+        </table>
+        <dialog class="formAgregarP">
+                <div>
+                    <label for="">ID</label>
+                    <input type="text" id="idProfe">
+                </div>
+                <div>
+                    <label for="">Nombre</label>
+                    <input type="text" id="nombreProfe">
+                </div>
+                <div>
+                    <label for="">Apellido</label>
+                    <input type="text" id="apellidoProfe">
+                </div>
+                <div>
+                    <label for="">Asignatura</label>
+                    <input type="text" id="Asignatura">
+                </div>
+                <div>
+                    <label for="">Aula</label>
+                    <input type="text" id="AulaProfe">
+                </div>
+                <button id="cerrarProfe">Cerrar</button>
+        </dialog>
+    </section>
+
+    <script src="./home.js">
+    </script>
+</body>
+</html>
